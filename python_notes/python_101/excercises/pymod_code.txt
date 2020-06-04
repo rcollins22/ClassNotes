@@ -1,0 +1,56 @@
+import math
+
+good = .2
+fair = .15
+bad = .1
+amount = 0
+
+while not amount:
+    try:
+        amount = float(input("How Much was the bill?\n"))
+    except ValueError:
+        print("You must give a valid number to be able to calculate the tip.")
+    else:
+        if amount <= 0:
+            print("A tip can only be calculated on a value greater than 0.")
+            amount = 0
+
+service_quality = input("How Good was the Service?\n")
+
+tip_per = good
+if service_quality == 'fair':
+    tip_per = fair
+elif service_quality == "bad":
+    tip_per = bad
+else:
+    print('Incorrect value given. Good Service is assumed.')
+
+tip_amount = amount*tip_per
+total_amount = tip_amount + amount
+
+if input("Do you want to round the total up?") == "yes":
+    total_amount = math.ceil(total_amount)
+    tip_amount = total_amount - amount
+
+individual_amount = total_amount
+
+do_split = input("Do you want to split the tab?\n")
+
+if do_split == "yes":
+    split_into = 0
+    while split_into == 0:
+        try:
+            split_into = int(input("How many ways do you want to split the tab?\n"))
+        except ValueError:
+            print('That was an invalid input.')
+        else:
+            if split_into <= 0:
+                print('The number to split must be greater than 0')
+            else:
+                 individual_amount = total_amount / split_into       
+
+print('The tip amount is : $%.2f. ' % tip_amount)
+print('The total is : $%.2f' % total_amount)
+if do_split == 'yes':
+    print('Each individual pays: $%.2f' % individual_amount)
+

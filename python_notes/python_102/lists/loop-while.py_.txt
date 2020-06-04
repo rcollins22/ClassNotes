@@ -1,0 +1,7 @@
+han_description = ['stuck-up', 'half-witted', 'scruffy-looking', 'nerf herder']
+
+index = 0
+print("Why You:");
+while index < len(han_description):
+    print("%d. %s" % (index+1, han_description[index]))
+    index += 1

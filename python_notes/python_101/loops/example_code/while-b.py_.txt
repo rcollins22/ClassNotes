@@ -1,0 +1,7 @@
+MIN_UNTIL_RETREAT = 176
+clones_alive = 210
+while clones_alive > MIN_UNTIL_RETREAT:
+    print("Another Clone has fallen.\nWe are only %s clones deaths away before we must retreat!\n" % (clones_alive-MIN_UNTIL_RETREAT))
+    clones_alive -= 1
+
+print('We have lost enough clones that we must retreat!')

@@ -1,0 +1,4 @@
+clone_count = 34230346
+avg_droid_destroyed_per_clone = 3.45
+
+print(clone_count * avg_droid_destroyed_per_clone)

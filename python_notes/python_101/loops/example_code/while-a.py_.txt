@@ -1,0 +1,4 @@
+droids_destroyed = 0
+while droids_destroyed < 42:
+    print("Yoda has dispatched %s droids!" % droids_destroyed)
+    droids_destroyed = droids_destroyed + 1

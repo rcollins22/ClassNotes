@@ -1,0 +1,14 @@
+two = 1 + 1
+print(two)
+
+a_number = two - 10
+print(a_number)
+
+result_of_division = a_number / two
+print(result_of_division)
+
+multiply = result_of_division * 2
+print(multiply)
+
+odds_of_survival = 1 / 725 * 100
+print(odds_of_survival)

@@ -1,0 +1,15 @@
+star_wars_name = None
+
+message = """
+Greetings:
+Please enter Galactic ID Username
+"""
+
+star_wars_name = input(message)
+
+if(star_wars_name != ""):
+    print("Welcome %s your ID has been accepted." % star_wars_name)
+else:
+    print("You must enter an ID to proceed!")
+
+print("End of Transmission >>>")

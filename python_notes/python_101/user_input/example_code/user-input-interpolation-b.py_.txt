@@ -1,0 +1,6 @@
+first_line = "Greetings:"
+second_line = "Please enter Galactic ID Username"
+
+star_wars_name = input("\n %s \n %s \n" % (first_line, second_line))
+
+print("Welcome %s your ID has been accepted." % star_wars_name)

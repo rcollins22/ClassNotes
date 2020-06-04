@@ -1,0 +1,7 @@
+han_description = ['stuck-up', 'half-witted', 'scruffy-looking', 'nerf herder']
+lukes_real_hands = ["left"]
+people_who_like_jar_jar = []
+
+print(han_description[1])
+print(lukes_real_hands[0])
+print(people_who_like_jar_jar[100])

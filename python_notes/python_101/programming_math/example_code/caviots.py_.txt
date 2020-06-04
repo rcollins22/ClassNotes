@@ -1,0 +1,12 @@
+hit_per = .0432
+fire_rate = 8.4567
+droid_count = 2123
+clone_count = 750
+clones_left = clone_count - hit_per / fire_rate * droid_count
+print(clones_left)
+
+#less fun
+print(750 - 0.0432 / 8.4567 * 2123)
+
+times_greedo_shot_first = 0
+hans_chance_to_get_hit_by_greedo = 100/0

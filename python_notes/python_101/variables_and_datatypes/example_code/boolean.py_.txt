@@ -1,0 +1,5 @@
+is_yoda_short = True
+
+is_chewy_short = False
+
+greedo_shot_first = False

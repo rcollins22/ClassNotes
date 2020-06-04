@@ -1,0 +1,10 @@
+anakian_mc_count = 20421
+yoda_mc_count = 19632
+c3po_mc_count = 0
+
+print(anakian_mc_count > 20000)
+print(anakian_mc_count < yoda_mc_count)
+print(c3po_mc_count >= 1000)
+print(0 == c3po_mc_count)
+print(anakian_mc_count != 300)
+print(not c3po_mc_count >= yoda_mc_count)

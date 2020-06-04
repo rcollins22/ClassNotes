@@ -1,0 +1,8 @@
+han_solo_quote = "I know."
+
+yoda_quote = 'you will be...you will be'
+
+darth_vader_quote = """
+No,
+I am your Father!
+"""

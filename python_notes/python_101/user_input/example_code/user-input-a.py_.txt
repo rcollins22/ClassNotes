@@ -1,0 +1,6 @@
+input_string = '''
+    Greetings:
+    Please enter Galactic ID Username
+'''
+star_wars_name = input(input_string)
+print("Welcome", star_wars_name)

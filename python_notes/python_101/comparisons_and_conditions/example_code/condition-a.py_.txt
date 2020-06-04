@@ -1,0 +1,9 @@
+name = ""
+
+if(True):
+    name = "Yoda"
+
+if(False):
+    name = 'Jar Jar Binks'
+
+print("%s knows how to use a lightsaber" % name)

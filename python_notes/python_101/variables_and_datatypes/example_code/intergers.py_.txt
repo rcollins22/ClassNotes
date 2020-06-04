@@ -1,0 +1,5 @@
+episodes = 9
+
+lukes_hand_count = 1
+
+jar_jar_binks_popularity = -5000

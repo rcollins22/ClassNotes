@@ -1,0 +1,9 @@
+han_description = ['stuck-up', 'half-witted', 'scruffy-looking', 'nerf herder']
+
+print(han_description[-1])
+print(han_description)
+print(han_description[1:3])
+print(han_description[2:])
+print(han_description[:3])
+print(han_description[-3:-1])
+print(han_description[-1:])

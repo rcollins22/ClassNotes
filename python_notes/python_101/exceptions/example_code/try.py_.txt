@@ -1,0 +1,12 @@
+droids = '100'
+
+try:
+    print(3-droids)
+except TypeError:
+    print("What is wroing with droids... is it a string or a number")
+
+
+try:
+    print(int(droids) / 0)
+except ZeroDivisionError:
+    print('You Casted droids into int...but you divided by 0')

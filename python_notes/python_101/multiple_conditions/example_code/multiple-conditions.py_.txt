@@ -1,0 +1,26 @@
+id_message = """
+Greetings:
+Please enter Galactic ID Username
+"""
+
+ship_message = """
+Please state the name of you ship:
+"""
+
+accepted_message = """
+Welcome %s your ID has been accepted.
+The %s's docking has been logged and credits will be withdrawn your account.
+"""
+
+star_wars_name = input(id_message)
+
+if star_wars_name:
+    ship_name = input(ship_message)
+    if ship_name:
+        print(accepted_message % (star_wars_name, ship_name))
+    else:
+        print("You must enter your ship name to proceed!")
+else:
+    print("You must enter an ID to proceed!")
+
+print("End of Transmission >>>")
