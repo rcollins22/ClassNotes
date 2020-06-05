@@ -1,0 +1,13 @@
+#lists with differrent types inside
+#integers and floats
+episode_numbers_order = [4, 5, 6, 1, 2, 3, 7, 3.9, 8, 3.5, 9]
+
+#episode 1-9 (True, False, None = Didn't Appear)
+Luke_whines_in_episode = [None, None, None, True, True, False, False, True, None]
+
+#strings and lists
+giant_exogorth = [
+    "Millennium Falcon",
+    ['mynock 1', 'mynock 2', 'mynocl 3'], 
+    ["parisite exogorth","parisite exogorth"]
+]

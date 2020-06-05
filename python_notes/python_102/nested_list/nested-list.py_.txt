@@ -1,0 +1,15 @@
+#strings and lists
+giant_exogorth = [
+    "Millennium Falcon",
+    ['mynock 1', 'mynock 2', 'mynocl 3'], 
+    ["parisite exogorth","parisite exogorth"]
+]
+
+print(giant_exogorth[1])
+
+#assign indexed item to a variable
+mynocks = giant_exogorth[1]
+print(mynocks[0])
+
+#same as  above but no need to assign a variable
+print(giant_exogorth[1][0])

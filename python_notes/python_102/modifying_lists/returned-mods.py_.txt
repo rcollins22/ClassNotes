@@ -1,0 +1,20 @@
+falcon_parts = [
+    'Dejarik Board', 
+    'Toplex Deflector Shield', 
+    'L3 + V-5 Navigation', 
+    'SSP05 Hyperdrive', 
+    'AG-2G Laser Cannon', 
+    'AG-2G Laser Cannon', 
+    'Sensor Proof Smuggler Compartment',
+    'Satellite Antenna', 
+    'Aurodium-Plated Gold Dice'
+]
+print(falcon_parts)
+
+poorly_cloned_falcon = falcon_parts + ["Wookiee"]
+print(falcon_parts)
+print(poorly_cloned_falcon)
+
+removed_part = falcon_parts.pop(7)
+print(removed_part)
+print(falcon_parts)

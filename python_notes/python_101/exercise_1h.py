@@ -102,7 +102,7 @@ if nbr==guess:
     print("you must be Psychic!")
     exit() """
 #---------------------------------------------------------------------------------------
- """Limit the number of guesses the player has to 5. If he cannot guess the number
+"""Limit the number of guesses the player has to 5. If he cannot guess the number
   within 5 guesses, he losses."""
 
 import random

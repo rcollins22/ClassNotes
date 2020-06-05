@@ -1,0 +1,14 @@
+falcon_parts = ["Toplex Deflector Shield","L3 + V-5 Navigation", "SSP05 Hyperdrive", "AG-2G Laser Cannon", "Escape Pod"]
+print(falcon_parts)
+
+del falcon_parts[len(falcon_parts)-1]
+print(falcon_parts)
+
+falcon_parts.append("AG-2G Laser Cannon")
+print(falcon_parts)
+
+falcon_parts.extend(["Sensor Proof Smuggler Compartment", 'Aurodium-Plated Gold Dice'])
+print(falcon_parts)
+
+falcon_parts.insert(0, "Dejarik Board")
+print(falcon_parts)

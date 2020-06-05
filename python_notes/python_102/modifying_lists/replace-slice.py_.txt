@@ -1,0 +1,11 @@
+han_description = ['stuck-up', 'half-witted', 'scruffy-looking', 'nerf herder']
+print(han_description)
+han_description[2] = "Who's Scruffy Looking?"
+print(han_description)
+
+falcon_parts = ["Toplex Deflector Shield","V-5 Navigation Computer", "YT-1300 Hyperdrive", "AG-2G Laser Cannon", "Escape Pod"]
+print(falcon_parts)
+
+hans_modifications = ["L3 + V-5 Navigation", "SSP05 Hyperdrive"]
+falcon_parts[1:3] = hans_modifications
+print(falcon_parts)

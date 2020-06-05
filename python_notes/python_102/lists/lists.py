@@ -7,7 +7,7 @@
 
 # ex= ['a' , 'b', 'c' ,'d'] 
 # print(ex[-1]) #PRINTS THE LAST ITEM: 'd'
-# print(ex[0:3]) #PRINTS ALL ITEMS BETWEEN PARMETERS ITEMS: ['a','b','c']
+# print(ex[0:3]) #PRINTS ALL ITEMS BETWEEN PARMETERS ITEMS: ['a','b','c']     ####STARTING NO. IS INCL. LAST ONE ISNT### 
 # print(ex[:2]) #PRINTS ITEMS UP TO SELECTED: ['a','b']
 # print(ex[0:]) #PRINTS SELECTED ITEM AND ALL AFTER: ['a', 'b', 'c', 'd']
 
