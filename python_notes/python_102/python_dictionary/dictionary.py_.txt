@@ -1,0 +1,39 @@
+#simple Key Values
+names_and_force_side = {
+    "Luke":"light",
+    "Maul":"dark",
+    "Han":"grey",#he did shoot first
+    "Yoda":"light"
+}
+
+#same data... different way of presenting
+force_side = {
+    "light":["Luke", "Yoda"],
+    "Dark":["Maul"],
+    "Grey":["Han"]
+} 
+
+#Simple Key and Values are Lists
+weapons = {
+    "light-saber":["Yoda", "Luke", "Anakin"],
+    "blaster":["Leia", "Han", "Bobba Fett"],
+    "bowcaster":["Chewbacca"]
+}
+
+#Mix of interger, list, string, and dictonary
+falcon_parts = {
+    "Navigation":['L3','V-5'],
+    "Deflector_Shield":"Toplex",
+    "Hyperdrive":"SSP05",
+    "Extras":{
+        "Entertainment":['Dejarik Board', "Hinding Spaces"],
+        "Luck": 'Aurodium-Plated Gold Dice',
+        "Smuggling":"Sensor Proof Smuggler Compartment"
+    },
+    "Armement":[
+        'AG-2G Laser Cannon',
+        'AG-2G Laser Cannon'
+    ],
+    "cockpit_seating":5
+}
+print(falcon_parts)

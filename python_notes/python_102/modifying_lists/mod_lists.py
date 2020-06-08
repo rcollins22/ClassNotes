@@ -38,18 +38,15 @@
 # print(dparts)
 
 #------------------------------------------------------------------------------------------------------------
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet = "abcdefghijklmnopqrstuvwxyz"   ###STRINGS CANT BE MODIFIED< MUST BE TURNED INTO LIST TO DO 
 
-alphalist = list(alphabet)
+alphalist = list(alphabet)      ###LIST() TURNS A STRING INTO A LIST
 alphalist[0] = "4"
 
-print(alphalist)
+print(alphalist)               ##PRINTS ['4','b','c'...ETC]
 
-alphabet = "".join(alphalist)
+alphabet = "".join(alphalist)    ###.JOIN() TURNS A LIST INTO A STRING
 print(alphabet)
-
-
-
 
 
 #------------------------------------------------------------------------------------------------------------

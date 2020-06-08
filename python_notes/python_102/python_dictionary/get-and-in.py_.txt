@@ -1,0 +1,39 @@
+falcon_parts = {
+    "Navigation":['L3','V-5'],
+    "Deflector_Shield":"Toplex",
+    "Hyperdrive":"SSP05",
+    "Extras":{
+        "Entertainment":['Dejarik Board', "Hinding Spaces"],
+        "Luck": 'Aurodium-Plated Gold Dice',
+        "Smuggling":"Sensor Proof Smuggler Compartment"
+    },
+    "Armement":[
+        'AG-2G Laser Cannon',
+        'AG-2G Laser Cannon'
+    ],
+    "cockpit_seating":5
+}
+
+#print(falcon_parts["Stormtroopers"]) #errors
+
+#If not sure the key exists
+print(falcon_parts.get("Stormtroopers"))
+print(falcon_parts.get("Armement"))
+#optional argument
+print(falcon_parts.get("Stormtroopers", "There are no stormtroopers here."))
+
+if "Stormtroopers" in falcon_parts:
+    print("Why are you in here?")
+else:
+    print('Of Course no storm troopers are here.')
+
+#using not in
+if "Stormtroopers" not in falcon_parts:
+    print('Again there should never be a Stormtrooper here!')
+
+#assigning the variable and using it
+looking_for = "Extras"
+if looking_for in falcon_parts:
+    print("Yup got some %s in the falcon." % looking_for)
+
+

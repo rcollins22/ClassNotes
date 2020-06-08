@@ -1,0 +1,32 @@
+falcon_parts = {
+    "Navigation":['L3','V-5'],
+    "Deflector_Shield":"Toplex",
+    "Hyperdrive":"SSP05",
+    "Extras":{
+        "Entertainment":['Dejarik Board', "Hinding Spaces"],
+        "Luck": 'Aurodium-Plated Gold Dice',
+        "Smuggling":"Sensor Proof Smuggler Compartment"
+    },
+    "Armement":[
+        'AG-2G Laser Cannon',
+        'AG-2G Laser Cannon'
+    ],
+    "cockpit_seating":5
+}
+
+
+#using for in
+for key in falcon_parts:
+    print(key)
+    print("The values of %s are : " % key)
+    print(falcon_parts[key])
+
+#nested
+for key in falcon_parts:
+    if type(falcon_parts[key]) == dict:
+        print("%s is a dictionary that has :" % key)
+        for nested_key in falcon_parts[key]:
+            print(" %s - %s " % (nested_key, falcon_parts[key][nested_key]))
+    else:
+        print('The part is not a dictionary its value is : %s ' % falcon_parts[key])
+            

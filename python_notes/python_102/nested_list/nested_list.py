@@ -49,7 +49,7 @@ fav_food=[['Cheese','Milk','Eggs'],
 idx=0
 for food in fav_food:
     print("Food #%d has the following ingredients: " % (idx + 1))   #idx IS AN INDEX(base) NUMBER 
-    for i in fav_food[idx]:
+    for i in fav_food[idx]:                                         #
         print("     %s" % i)
     idx+=1
 

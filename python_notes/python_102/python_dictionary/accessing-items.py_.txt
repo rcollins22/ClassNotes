@@ -1,0 +1,30 @@
+#simple access item
+force_side = {
+    "Light":["Luke", "Yoda"],
+    "Dark":["Maul"],
+    "Grey":["Han"]
+}
+
+print(force_side["Dark"])
+good_guys = force_side["Light"]
+print(good_guys[0])
+
+print(force_side["Light"][1])
+
+falcon_parts = {
+    "Navigation":['L3','V-5'],
+    "Deflector_Shield":"Toplex",
+    "Hyperdrive":"SSP05",
+    "Extras":{
+        "Entertainment":['Dejarik Board', "Hinding Spaces"],
+        "Luck": 'Aurodium-Plated Gold Dice',
+        "Smuggling":"Sensor Proof Smuggler Compartment"
+    },
+    "Armement":[
+        'AG-2G Laser Cannon',
+        'AG-2G Laser Cannon'
+    ],
+    "cockpit_seating":5
+}
+
+print(falcon_parts["Extras"]["Luck"])

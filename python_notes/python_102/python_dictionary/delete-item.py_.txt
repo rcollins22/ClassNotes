@@ -1,0 +1,20 @@
+falcon_parts = {
+    "Navigation":['L3','V-5'],
+    "Deflector_Shield":"Toplex",
+    "Hyperdrive":"SSP05",
+    "Extras":{
+        "Entertainment":['Dejarik Board', "Hinding Spaces"],
+        "Luck": 'Aurodium-Plated Gold Dice',
+        "Smuggling":"Sensor Proof Smuggler Compartment"
+    },
+    "Armement":[
+        'AG-2G Laser Cannon',
+        'AG-2G Laser Cannon'
+    ],
+    "cockpit_seating":5
+}
+#deletes single item
+del falcon_parts["cockpit_seating"]
+
+#deletes item with nested stuff
+del falcon["Extras"]

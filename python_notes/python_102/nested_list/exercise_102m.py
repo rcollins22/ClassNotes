@@ -10,56 +10,49 @@ for x in list_a:
     pop=list_a[idx]*list_b[idx]
     list_c.append(pop)
     idx+=1
-
+print(list_c)
 #------------------------------------------------------------------------------------------------------------
 """ # 2. Matrix Addition
 Given two two-dimensional lists of numbers of the size 2x2 two dimensional list is represented as an 
 list of lists,Calculate the result of adding the two matrices. The number in each position in the resulting matrix should 
 be the sum of the numbers in the corresponding addend matrices.  """
 
-idx=0
-final=[]
-mtrx1= [[2, -2],
-   [5, 3]]
-g0,g1=mtrx1
-
-mtrx2=[[4,2],
-   [3,1]]
-h0,h1=mtrx2
-
-for x in mtrx1:
-    for y in g0:
-        f0=g0[idx]+h0[idx]
-        final.append(f0)
-        idx+=1
-
-print(final)
+mtrx_1 = [
+    [1, 3],
+    [2, 4]
+]
+mtrx_2 = [
+    [5, 2],
+    [1, 0]
+]
+print(str(mtrx_1[0][0] + mtrx_2[0][0]) + ' ' + str(mtrx_1[0][1] + mtrx_2[0][1]))
+print(str(mtrx_1[1][0] + mtrx_2[1][0]) + ' ' + str(mtrx_1[1][1] + mtrx_2[1][1]))
     
-
-
-#------------------------------------------------------------------------------------------------------------
-
-
-final=[]
-mtrx1= [[2, -2],
-   [5, 3]]
-g0,g1=mtrx1
-
-mtrx2=[[4,2],
-   [3,1]]
-h0,h1=mtrx2
-
-for x in range(len(mtrx1)):
-    for y in range(len(mtrx1[0])):
-        final[x][y]=mtrx1[x][y]+mtrx2[x][y]
-
 
 #------------------------------------------------------------------------------------------------------------
 """ # 3. Matrix Addition II
 Use your solution in Matrix Addition, and extend it to work for a pair of matrices of any size, as long as they
  have the same size. """
 
+ar1= [[2,3,6,7,2,6] , 
+     [5,2,6,5,3,1], 
+     [4,5,7,1,8,3]]
+                                                                               
+ar2=[[3,6,1,7,8,5] , 
+    [2,6,4,8,3,5],
+    [6,2,1,8,3,9]]                            
+result=[]
+i=0                                                                            
 
+while i <len(ar1):
+   send_result=[]                                                
+   c=0
+   while c<len(ar1[0]):
+      send_result.append(ar1[i][c]+ar2[i][c])                  
+      c+=1                                                  
+   i+=1                                                          
+   result.append(send_result)                                   
+print(result)       
 
 #------------------------------------------------------------------------------------------------------------
 """ # 4. De-dup
@@ -74,6 +67,24 @@ you need to replace make the following character replacements (treat all input c
 Translates To 
 Example: If your program is given the String "I am a leet programmer", it should print "1 4m 4 l337 pr0gr4mm3r" 
 as the leetspeak translation """
+
+
+my_string='Blockchain is the key to the future. Blockchain has several utilizations for our future and you guys should get ahead!!'
+my_string.replace('a','4')
+my_string.replace('e','3')
+my_string.replace('g','6')
+my_string.replace('i','4')
+my_string.replace('o','0')
+my_string.replace('s','5')
+my_string.replace('t','7')
+# A	4
+# E	3
+# G	6
+# I	1
+# O	0
+# S	5
+# T	7
+print(my_string)
 
 
 #------------------------------------------------------------------------------------------------------------
@@ -91,4 +102,3 @@ Spoon => Spooooon"""
 """ Given a string, print the Caesar Cipher (or ROT13) of that string. What is Caesar Cipher? Learn about it here.
 Use your solution to decipher the following text: "lbh zhfg hayrnea jung lbh unir yrnearq" """
 
-#

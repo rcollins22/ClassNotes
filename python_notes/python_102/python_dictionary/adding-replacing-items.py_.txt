@@ -1,0 +1,27 @@
+falcon_parts = {
+    "Navigation":['L3','V-5'],
+    "Deflector_Shield":"Toplex",
+    "Hyperdrive":"SSP05",
+    "Extras":{
+        "Entertainment":['Dejarik Board', "Hinding Spaces"],
+        "Luck": 'Aurodium-Plated Gold Dice',
+        "Smuggling":"Sensor Proof Smuggler Compartment"
+    },
+    "Armement":[
+        'AG-2G Laser Cannon',
+        'AG-2G Laser Cannon'
+    ],
+    "cockpit_seating":5
+}
+
+#adding item
+falcon_parts["communication"] = "Satellite"
+
+#adding nested item
+falcon_parts["Extras"]["livestock"] = ["Porg 1", "Porg 2", "Porg 3"]
+
+#modify an element by its index
+falcon_parts["cockpit_seating"] = 4
+
+#modify a nested item 
+falcon_parts["Armement"][0]="AG-2G Laser Cannon **Jammed**"
