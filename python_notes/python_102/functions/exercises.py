@@ -37,6 +37,8 @@ def converter(f):
 #converter(f)
 
 #---------------------------------------------------------------------------------------------------------------------------
+""" Write a function that accepts a number as an argument and returns a Boolean value. Return True if the number is even; 
+return False if it is not even. do the same for odd numbers. """
 def is_even():
     n=int(input("input a number"))
     if n % 2 == 0:
