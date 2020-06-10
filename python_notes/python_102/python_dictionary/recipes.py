@@ -35,7 +35,7 @@ f2=food["F2"]
 f3=food['F3']
 
 
-#def recipe_log():
+def recipe_log():
     try:
         num=int(input("\nHello! Input the number corresponding to the Food to View The Recipe\n1. %s \n2. %s\n3. %s\n" % (f1_name,f2_name,f3_name)))
     except ValueError:
