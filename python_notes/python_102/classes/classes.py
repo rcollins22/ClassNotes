@@ -24,7 +24,7 @@ print(player1.position)
 
 player2=Player()
 position2= position
-player1.movement('left',10,position)
+player1.movement('left',10,position) 
 print(player1)
 
 Player()
@@ -45,7 +45,7 @@ class Character():
         return self.attack_power
         
    ## 'self.' CAN BE USED IN THE FUNCTION, THE FOLLOWING RUNS THE SAME AS ABOVE##
-   ##AFTER ADDING 'self.' IN THE INTERNAL ARGUMENTS WE NO LONGER NEED TODECLASE THEM##
+   ##AFTER ADDING 'self.' IN THE INTERNAL ARGUMENTS WE NO LONGER NEED TO CLOSE THEM##
     def movement(self,dir):   
         if dir == 'left':
             self.position['x'] -= self.speed
