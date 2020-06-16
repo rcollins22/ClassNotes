@@ -1,0 +1,76 @@
+<!-- FORMS BEGIN BY BEING WRAPPED AS A ITEM, INPUTS MUST CLOSE WITHIN <form> BRACKETS -->
+<form>
+<!-- INPUT ALLOWS YOU TO INPUT INFO INTO HTML FORM -->
+    <input/> 
+
+</form>
+
+
+<form>
+    <!-- '<label>' IS USED TO CREATE A KEY LABEL FOR HTML INPUTS -->
+    <div>
+        <label>Wallet ID
+            <input wallet_id="wallet_id" />
+        </label>
+    </div>
+    <div>
+        <!-- 'for=' ASSIGNS A ELEMENT ID BOUND TO THE ITEM -->
+        <label for="recipient">Who are you sending to?</label>
+        <!-- PRINTS AN INPUT BOX WITH THE LABEL 'Who are you sending to' -->
+        <input id="recipient" recipient="recipient" />
+    </div>
+    
+</form>
+
+
+<form action="#">
+    <!-- 'fieldset' SECTIONS OFF SELECTED ITEMS AND LABELS THEM WITH THE 'legend' ATTRIBUTE -->
+    <fieldset>
+    <legend>This is the Fieldset</legend>
+    <div>
+        <label>Wallet ID
+            <!-- 'placeholder' PUTS AN EMPTY VALUE IN INPUT BOX -->
+            <input wallet_id="wallet_id" placeholder="Enter the Wallet ID"/>
+        </label>
+    </div>
+    </fieldset>
+    <div>
+        <!-- 'select' PROVIDES AS DROPDOWN MENU OF OPTIONS -->
+        <label for="chos_recip">Select Recipient</label>
+        <select name="chos_recip" id="chos_recip">
+            <!-- 'option' PROVIDES THE USER WITH PRESET OPTIONS IN 'select' DROPDOWN -->
+            <option value="clint">Clint</option>
+            <option value="liz">Liz</option>
+            <option value="sean">Sean</option>
+            <option value="rashad">Rashad</option>
+            <!-- SETTING value TO '' CREATES AN EMPTY, NULL SELECTION -->
+            <option value="">Im not sending anything</option>
+            <!-- 'selected' PROVIDES A DEFAULT CHOICE IN DROPDOWN -->
+            <option selected value="clint">Clint</option>
+    </div>
+    
+
+    <div>
+        <label for="recipient">Who are you sending to?</label>
+        <!-- 'value' ACTS AS A PLACEHOLDER UNLESS USER SUBMITS NO INFO, THEN VALUE IS SUBMITTED IN PLACE OF INPUT -->
+        <input id="recipient" recipient="recipient" value="Nobody? Rashad I Guess?" />
+    </div>
+    <div>
+        <!-- 'radio' IS A BOOLEAN TYPE SELECTOR, MUST BE USED IN PAIRS TO AVOID AUTO-SELECTION, 'checked' SETS THE BOOLEAN TO TRUE -->
+        <label><input type="radio" name="sure" id="yes" value="yes" checked/>Yes</label>
+        <label><input type="radio" name="sure" id="no" value="no" />No</label>
+    </div>
+    <div>
+        <!-- 'checkbox' PROVIDES AN OPTIONABLE CHECK MARKER -->
+        <label>Are you authorized to send funds?
+            <input type="checkbox" name="authorized" value="yes">
+        </label>
+        <!-- 'button' CREATES A ACTIONABLE OBJECT ON PAGE. -->
+        <button type='submit'>Submit</button>
+    </div>
+    <div>
+        <!-- 'textarea' PROVIDES THE USER WITH TEXT FIELD INPUT -->
+        <!-- 'disabled' PRINTS ITEMS, BUT DOESNT ALLOW USER TO INTERACT WITH ITEM -->
+        <textarea disabled name="reason">Enter reason here:</textarea>
+    </div>
+</form>
