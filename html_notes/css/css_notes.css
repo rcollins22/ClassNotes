@@ -1,0 +1,54 @@
+ /*  'selector' {} ACTS AS TARGETING STYLE METHOD  */
+/* CAN BE ON OWN AS A LINKED FILE, OR ADDED WITHIN HTML FILE USING <style> */
+main {
+    border: 10px
+}
+
+/* CAN TAKE MULTIPLE ARGUMENTS */
+main {
+    border: blue;
+    text-align: center;
+    border-style: dashed;
+}
+
+/* CAN MODIFY MULTIPLE CLASSES */
+main, h1 {
+    text-align: left;
+}
+
+/* '.' CAN BE USED TO TARGET SPECIFIC CLASSES FOR EDITING */
+.user_input {
+    font-weight: 100;
+    /* ANY STYLE CHANGES ADDED TO TEXT AREA AFFECTS THE ACTUAL INPUT AREA
+}
+
+/* MARGIN: THE SPACE AROUND THE ENTIRE OBJECT AND BORDER */
+/* BORDER: THE EDGE OF THE PADDING OF AN ELEMENT */
+
+/* BOX MODEL
+
+/* PADDING:THE SPACE BETWEEN THE ACTUAL OBJECT AND BORDER */
+    item{
+        padding:10px
+    }
+    /* YOU CAN TARGET THE SIDES FOR STYLING BY TYPING PARAMETERS IN CLOCKWISE ORDER: */
+    item{
+        padding: 10pt 20pt 30pt 40pt;    /*THIS EQUALS TOP=10, RIGHT=20, BOTTOM=30 LEFT=40, CLOCKWISE */
+    }
+
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+/* 'hover' IS USED TO CHANGE THAT ITEM WHILE CURSOR IS HOVERING */
+.user_input:hover{
+        background-color: blue;
+    }
+
+    /*  ADDING A '.' BETWEEN CLASS SELECTORS FINDS ITEMS THAT ARE MEMBERS OF BOTH CLASSES */
+    .user_input.wallet_id {
+        color: blueviolet;
+    }
+
+    ]

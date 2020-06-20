@@ -1,0 +1,11 @@
+/* CSS comment
+*/
+
+/* Rule (or ruleset) breakdown */
+selector 						   
+{ 						                /* Declaration Block Start  */
+   property1:value1; 				    /* <- Declaration           */
+   property2:value2 value2a value2b; 	/* <- Declaration           */
+} 							            /* Declaration Block End    */
+
+/* ^^^ (not a valid css rule do not copy =) )*/

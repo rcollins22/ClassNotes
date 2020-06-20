@@ -1,0 +1,56 @@
+/*
+ CSS comment
+*/
+
+/*
+    Tag Selectors
+*/
+a {
+    color:#22e710;
+    font-weight:bold;
+}
+
+div
+{
+    background:red;
+    padding:10px;
+}
+
+p {text-decoration: underline; color:rgba(10,10,20)}
+
+/*
+    Id Selectors
+*/
+
+#main-content {
+    width:600px;
+    margin-left:50%;
+}
+
+#nav-bar {
+    width:100%;
+    margin-top:10px;
+}
+
+/*
+    Class Selectors
+*/
+
+.content-item {
+    background-color: darkslategrey;
+    color:#2df;
+}
+
+.nav-item {
+    font-size:1.5em;
+}
+
+/* Pseudo Class */
+h1:hover {
+    background-color: darkturquoise;
+    color:#112233;
+}
+
+.nav-item:first {
+    background-color: red;
+}
