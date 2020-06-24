@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Accessing the DOM
+        </title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Rogue One : A star wars story was amazing.</h1>
+        <div class="content" id="mainContent">
+            <section>
+                <h2>It was so special</h2>
+                <p>No other story brings such great emotion, and post-human Carrie Fisher had my wife in tears.</p>
+                <p class="extra">The story between Cassian and Jyn was tragically perfect.</p>
+            </section>
+            <section>
+                <h2>It fill much needed plot holes</h2>
+                <p>Really, Galen hiding that defect in the Death Star was a stroke of genius.</p>
+                <p class="extra">It added a lot to the power of Tarkin and how he was able to give a command to Vader too!</p>
+            </section>
+            <section>
+                <h2>Get More Info</h2>
+                <form>
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" name="first-name" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" />
+                    </div>
+                </form>
+            </section>
+        </div>
+        <script>
+            console.log(document.getElementsByTagName('p'))
+            console.log(document.getElementsByClassName('extra'))
+            let htmlCol = document.getElementsByClassName('extra')
+            console.log(htmlCol);
+            let puc = htmlCol[0]
+            htmlCol[2].style = 'background:red;font-weight:bold;'
+            puc.innerHTML = "<h2>DISRUPT!!!</h2>"
+            console.dir(puc)
+
+            let aNodeListt = document.querySelectorAll('.extra')
+            console.log(aNodeListt)
+            
+        </script>
+    </body>
+</html>

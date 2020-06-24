@@ -11,7 +11,7 @@ const toUp = (string) =>{
 toUp('I Like To play')
 
 
-Write a function that will return the KEYS of an object as an array and have the array SORTed in alphebetical order.
+// Write a function that will return the KEYS of an object as an array and have the array SORTed in alphebetical order.
 
 object1= {
     name: 'Rashad',

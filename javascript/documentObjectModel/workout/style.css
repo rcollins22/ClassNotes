@@ -1,0 +1,29 @@
+section {
+    padding:10px;
+    margin:10px;
+    width:100%;
+    max-width: 350px;
+    box-shadow:6px 6px 4px 4px rgba(0.2,0.2,0.2, 0.1);
+    border-radius: 4px;
+    margin:20px;
+}
+h1,h2 {
+    border-bottom:1px solid #333;
+    font-family: sans-serif;
+    padding:2px;
+    color:rgb(112, 126, 172);
+}
+label {
+    display: block;
+    font-size:0.8rem;
+}
+.extra {
+    border-radius: 4px;
+    border:1px solid rgb(14, 59, 155);
+    padding:4px;
+    background:rgb(225, 232, 255);
+}
+.content {
+    display:flex;
+    flex-wrap:wrap;
+}
