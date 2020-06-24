@@ -1,0 +1,35 @@
+//comment
+/*
+    multi line comment
+*/
+
+"Hello World" //String
+
+'Hello World' // string again
+
+`
+    Hello
+    World
+`//still a string
+
+18.8 //Number
+12 //Number as well
+
+true //Boolean
+false //Boolean as well
+
+null //Null type
+
+['yoda','clone',9] //Array
+
+let jedi = {   
+    name:'Yoda',
+    age:900
+} //Object
+
+function helloWord(){ console.log('Hello World')} //function
+
+/*These two are for a bit later Don't sweat it yet */
+var alsoHelloWorld = function(){console.log("Hello World")} //Also a function. We will get to variables next. 
+
+hello=>console.log(hello) //WOAH CRAZY LOOKING. Also a function ... we will discuss this in the future.

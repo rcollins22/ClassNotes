@@ -1,0 +1,21 @@
+/*variables*/
+
+var bestJediName = "Yoda"
+
+let worstCharacter = {
+    name:"Jar Jar",
+    reason:"Raciest, un-needed, not funny."
+}
+
+const jediList = [bestJediName, "Obi Wan", "Anakin Skywalker"]
+
+/* Do stuff */
+bestJediName = "Qui Gon jinn"
+console.log(bestJediName)
+bestJediName = jediList[1]
+console.log(bestJediName)
+
+var bestJediName = "Jar Jar" //NOOOO (Why I recommend never using var)
+let bestJediName = "Darth Maul"
+
+jediList = ["Chewbacca", "Han Solo", "Finn"] //Can't do that!

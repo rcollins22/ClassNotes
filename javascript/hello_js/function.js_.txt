@@ -1,0 +1,21 @@
+//define function
+function makeBlasterSound(){
+    console.log('The Blaster makes the Pew Pew Sound')
+}
+
+//set as variable
+const starWarsSounds = function(item, sound){
+    return "The "+item + " goes " + sound
+}
+let sound = starWarsSounds('blaster', "pew pew")
+console.log(sound)
+
+//arrow functions
+const getSoundMessage = (item, sound)=>{
+    return `The ${item} goes ${sound}`
+}
+/*
+const getSoundMessage = (item, sound)=>`The ${item} goes ${sound}` //implicit return
+*/
+console.log(getSoundMessage("Boltcaster", "Pee Tweep"))
+
