@@ -39,12 +39,29 @@
             let htmlCol = document.getElementsByClassName('extra')
             console.log(htmlCol);
             let puc = htmlCol[0]
-            htmlCol[2].style = 'background:red;font-weight:bold;'
             puc.innerHTML = "<h2>DISRUPT!!!</h2>"
             console.dir(puc)
 
             let aNodeListt = document.querySelectorAll('.extra')
             console.log(aNodeListt)
+            
+            const createCard  = (title, content, extra) => {
+                let newSect = document.createElement("section")
+                let newTitle = document.createElement('h2')
+                newTitle.innerText = 'Im here now'
+            
+                let testP = document.createElement("p")
+                testP.append(content)
+                
+                let tP2 = document.createElement('p')
+                tP2.append(extra)
+
+                newSect.append(newTitle,testP,tP2)
+                console(localStorage
+                let docBody = document,getElementById('mainContent')
+                docBody.appnend(newSect)
+
+            }
             
         </script>
     </body>
