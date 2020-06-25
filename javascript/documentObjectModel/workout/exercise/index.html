@@ -1,20 +1,35 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen" />
+    </head>
     <body>
     <div id="container"></div>
         <script>
-            const header = document.createElement('section')
-            const ttlP = document.createElement('h1')
-            const menu = document.createElement('div')
-            const  gryBox = document.createElement('section')
-            const curseOf = document.createElement('h2')
-            const p1 = document.createElement('p')
-            const p2 = document.createElement('p')
-            const p3 = document.createElement('p')
-            container.append(ttlP,menu)
+            var header = document.createElement('section')
+            var ttlP = document.createElement('h1')
+            var menu = document.createElement('div')
+            var menu1 = document.createElement('div')
+            var  gryBox = document.createElement('div')
+            var curseOf = document.createElement('h2')
+            var p1 = document.createElement('p')
+            var p2 = document.createElement('p')
+            var p3 = document.createElement('p')
+            
+            container.append(ttlP,menu,menu1)
             ttlP.innerText = "HighOnCoding"
-            ttlP.style.backgroundColor = (235, 230, 238)
-            ttlP.style.color = (255,205,255)
+            menu.innerText = "Home"
+            menu1.innerText="Categories";
+            
+            function sndBox (){
+                gryBox.append(curseOf,p1)
+                console.log(gryBox)
+                curseOf.innerText = "Curse of the current reviews"
+                p1.innerText="When you want to buy any application from the Apple iTues store you have more choices than you think you can handle. Most o"
+            }
+
+            // ttlP.style.backgroundColor = (235, 230, 238)
+            // ttlP.style.color =(255,205,255)
 
 
         </script>

@@ -1,0 +1,9 @@
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    align-items: center;
+}
+  {
+    background-color: blue;
+} 
