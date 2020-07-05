@@ -1,0 +1,26 @@
+<Html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            
+
+            const time = new Promise((re) => {
+               resolve  ( Math.floor(Math.random()*10))
+               return resolve;
+                
+            })
+
+            .then(sec=>{
+                setTimeout(myFunction(sec),sec*1000)
+            })
+            
+            const myFunction = (setSec) =>{
+                let body = document.querySelector('body');
+                body.innerText= `Stopwatch took ${setSec} seconds`;
+            }
+        
+        </script>
+    </body>
+</Html>

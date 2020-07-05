@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ajax Notes</title>
+    </head>
+    <body>
+        <script>
+            // 'new' ALLOWS USER TOCREATE INSTANCE OF  OBJECT TYPE.
+            const request = new XMLHttpRequest();
+            request.onreadystatechange=()=> {
+                if(request.readyState === 4 && request.status === 200){
+                    console.log(request.response);
+                    console.log(JSON.parse(request.response))
+                    let names=JSON.parse(request.response)
+                    let test = document.querySelector('body')
+
+                    names.forEach(name=>{
+                        let nameDom =document.createElement('div');
+                        nameDom.innerText= `${name.name}`
+                        test.append(nameDom)
+                    })
+                }
+                
+            };
+
+            request.open('GET','./names.json')
+            request.send();
+
+            const ajax = (url,callback) =>{
+                const request = new XMLHttpRequest();
+                request.onreadystatechange=()=> {
+                    if(request.readyState === 4 && request.status === 200){
+                        callback(request.response);
+                    }
+                    
+                };
+                request.open('GET','./names.json')
+                request.send();
+            }
+            ajax("./names.json",(resp)=>console.log(JSON.parse(resp)))
+            const getNames = (page =1) => {
+                ajax('./names.json',response=>console.log(JSON.parse(response)))
+            }
+            getNames()
+            
+
+            
+        </script>
+    </body>
+</html>

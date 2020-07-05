@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            const myFunction = (json) =>{
+                console.log('continue')
+                console.log(json)
+                return 'weird'
+            }
+            fetch("https://swapi.dev/api/")
+            .then(ret=>ret.json())
+            .then(json=>myFunction(json))
+            .then(results=>console.log(results))
+        </script>
+    </body>
+</html>
