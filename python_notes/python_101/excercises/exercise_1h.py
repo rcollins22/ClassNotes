@@ -110,15 +110,24 @@ nbr= random.randint(1, 10)                ####GENERATES A RANDOM NUMBER####
 guess=int(input("Guess the number:\n"))
 GUESS_LEFT=4
 
-while nbr != guess:
-    if guess > nbr:
-        print("\ntoo high\n")
-    if guess < nbr:
-        print('\ntoo low\n')
-    guess=int(input('Wrong, Please try again:\n')) 
-
-if nbr==guess:
-    print("you must be Psychic!")
-    exit() 
+if GUESS_LEFT != 0:
+    while nbr != guess:
+        if guess > nbr:
+            GUESS_LEFT -= 1
+            print("\ntoo high\n")
+            guess=int(input('You have %d, Please try again:\n' % GUESS_LEFT)) 
+        if guess < nbr:
+            GUESS_LEFT -= 1
+            print('\ntoo low\n')
+            guess=int(input('You have %d, Please try again:\n' % GUESS_LEFT)) 
+        if nbr==guess:
+            print("you must be Psychic!")
+            exit()
+        if GUESS_LEFT == 0:
+            print('GAME OVER TRICK!')
+            exit()    
+        if nbr==guess:
+            print("you must be Psychic!")
+            exit() 
 
 
