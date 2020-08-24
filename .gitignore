@@ -1,2 +1,6 @@
 node/3rdPartyProject/node_modules
 express/node_modules
+node_modules
+.DS_Store
+es6/node_modules
+ Git re

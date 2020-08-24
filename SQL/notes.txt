@@ -1,0 +1,53 @@
+the following code creates a table (relational database) in SQL
+
+
+CREATE TABLE students (
+name VARCHAR(100),   //allows user to add name of a string type under 100 characters
+walletID VARCHAR(25),
+points INTEGER,  //adds variable type integer.
+is current BOOLEAN // creates a boolean for specified (AvailBal)
+userID SERIAL NOT NULL PRIMARY KEY // creates a serial code for ID. NOT NULL forces the userID to never be empty. PRIMARY KEY makes the userID  the relational identifier.
+)
+
+
+//the following code inserts values into the empty database we just created
+INSERT INTO accounts (name,walletID,availBal,userID) VALUES ('Rashad','vn3k4km354nnj9f2nd97lg2av5mmk','True','rcollins')
+INSERT INTO accounts (name,walletID,availBal,points) VALUES ('Chelsea','2mbmf040mc24wq35','False','900')
+INSERT INTO accounts (name,walletID,availBal,points) VALUES ('Adarsh','3mldj520fb5ksn583','False','10')
+INSERT INTO accounts (name,walletID,availBal,points) VALUES ('Adnan','59nkn944mmdk','True','10000')
+INSERT INTO accounts (name,walletID,availBal,points) VALUES ('Rashad','vn3kn9f2n7ammk','True','870')
+
+//the following code allows you to select entries from a displayed list of all instances on the database.
+
+SELECT * FROM accounts
+
+//this will return:
+
+name	walletid	     points	    availbal	userid
+Rashad	vn3kn9f2n7ammk		            true	    878
+Rashad	vn3kn9f2n7ammk	   870	        true	    1
+Adnan	59nkn944mmdk	  10000	        true	    2
+Adarsh	3mldj520fb5ksn583	10	        false	    3
+Chelsea	2mbmf040mc24wq35	900	        false	    4
+
+
+
+SELECT * FROM accounts WHERE userID=2
+
+//this will return the following:
+
+name	walletid	    points	availbal	userid
+Adnan	59nkn944mmdk	10000	true	        2
+
+
+
+SELECT name,userID FROM accounts WHERE points > 100;
+
+//this will return the following:
+
+name	points
+Rashad	870
+Adnan	10000
+Chelsea	900
+
+
